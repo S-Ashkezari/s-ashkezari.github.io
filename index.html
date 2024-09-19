@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses - Advanced AI</title>
+    <title>Courses</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,26 +30,9 @@
             text-align: center;
             border-radius: 5px;
         }
-        .submenu {
-            list-style-type: none;
-            padding-left: 0;
-            display: none;
-            margin-bottom: 10px;
-        }
-        .submenu li {
-            background-color: #f9f9f9;
-            color: #333;
-            padding: 10px;
-            margin-bottom: 5px;
-            text-align: center;
-            border-radius: 5px;
-        }
-        .submenu li a {
+        .menu > li a {
+            color: white;
             text-decoration: none;
-            color: #333;
-        }
-        .submenu li a:hover {
-            text-decoration: underline;
         }
         .menu > li:hover {
             background-color: #555;
@@ -58,56 +41,14 @@
 </head>
 <body>
 
-<h1>لیست دروس </h1>
+<h1>لیست دروس</h1>
 
 <ul class="menu">
-    <!-- Advanced AI Course -->
-    <li onclick="toggleSubmenu('course1')">هوش مصنوعی پیشرفته</li>
-    <ul class="submenu" id="course1">
-        <li><a href="advanced ai/chap1-AI(Advanced).pdf" target="_blank">فصل 1: مقدمه</a></li>
-        <li><a href="advanced_ai/chapter2.pdf" target="_blank">فصل 2: الگوریتم‌های جستجو</a></li>
-        <li><a href="advanced_ai/chapter3.pdf" target="_blank">فصل 3: یادگیری تقویتی</a></li>
-        <li><a href="advanced_ai/chapter4.pdf" target="_blank">فصل 4: یادگیری بدون نظارت</a></li>
-    </ul>
-
-    <!-- Neural Networks Course -->
-    <li onclick="toggleSubmenu('course2')">هوش مصنوعی</li>
-    <ul class="submenu" id="course2">
-        <li><a href="neural_networks/chapter1.pdf" target="_blank">فصل 1: مقدمه بر شبکه‌های عصبی</a></li>
-        <li><a href="neural_networks/chapter2.pdf" target="_blank">فصل 2: یادگیری عمیق</a></li>
-        <li><a href="neural_networks/chapter3.pdf" target="_blank">فصل 3: کاربردهای شبکه‌های عصبی</a></li>
-    </ul>
-
-    <!-- Reinforcement Learning Course -->
-    <li onclick="toggleSubmenu('course3')">ساختمان داده ها و الگوریتم ها</li>
-    <ul class="submenu" id="course3">
-        <li><a href="reinforcement_learning/chapter1.pdf" target="_blank">فصل 1: مفاهیم پایه‌ای یادگیری تقویتی</a></li>
-        <li><a href="reinforcement_learning/chapter2.pdf" target="_blank">فصل 2: Q-learning</a></li>
-        <li><a href="reinforcement_learning/chapter3.pdf" target="_blank">فصل 3: یادگیری تقویتی عمیق</a></li>
-    </ul>
-
-    <!-- Machine Learning Course -->
-    <li onclick="toggleSubmenu('course4')">مبانی کامپیوتر و برنامه سازی</li>
-    <ul class="submenu" id="course4">
-        <li><a href="machine_learning/chapter1.pdf" target="_blank">فصل 1: مقدمه بر یادگیری ماشین</a></li>
-        <li><a href="machine_learning/chapter2.pdf" target="_blank">فصل 2: یادگیری با نظارت</a></li>
-        <li><a href="machine_learning/chapter3.pdf" target="_blank">فصل 3: یادگیری بدون نظارت</a></li>
-        <li><a href="machine_learning/chapter4.pdf" target="_blank">فصل 4: انتخاب ویژگی</a></li>
-    </ul>
+    <li><a href="advanced_ai.html">هوش مصنوعی پیشرفته</a></li>
+    <li><a href="neural_networks.html">شبکه‌های عصبی</a></li>
+    <li><a href="reinforcement_learning.html">یادگیری تقویتی</a></li>
+    <li><a href="machine_learning.html">یادگیری ماشین</a></li>
 </ul>
-
-<script>
-    // Toggle function to show or hide the submenu
-    function toggleSubmenu(courseId) {
-        var submenu = document.getElementById(courseId);
-        if (submenu.style.display === "block") {
-            submenu.style.display = "none";
-        } else {
-            submenu.style.display = "block";
-        }
-    }
-</script>
 
 </body>
 </html>
-
