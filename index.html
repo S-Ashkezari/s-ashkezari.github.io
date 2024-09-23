@@ -18,51 +18,56 @@
             text-align: center;
             color: #333;
         }
-        h2 {
-            color: #333;
-            margin-bottom: 10px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
         }
-        .menu {
-            list-style-type: none;
-            padding: 0;
-            width: 300px;
-            float: right; 
-            margin: 0;
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #333;
+            vertical-align: top;
         }
-        .menu > li {
+        th {
             background-color: #333;
             color: white;
-            padding: 10px;
-            margin-bottom: 5px;
-            cursor: pointer;
-            text-align: center;
-            border-radius: 5px;
         }
-        .menu > li a {
-            color: white;
+        td {
+            background-color: #f9f9f9;
+        }
+        a {
+            color: #333;
             text-decoration: none;
         }
-        .menu > li:hover {
-            background-color: #555;
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-<h1>دروس مقطع کارشناسی ارشد</h1>
-<ul class="menu">
-    <li><a href="data_science_algorithms.html">الگوریتم‌های علم داده</a></li>
-    <li><a href="advanced_ai.html">هوش مصنوعی پیشرفته</a></li>
-</ul>
+<h1>دروس</h1>
 
-<h1>دروس دوره کارشناسی</h1>
-<ul class="menu">
-    <li><a href="ai.html">هوش مصنوعی</a></li>
-    <li><a href="data_structures.html">ساختمان داده‌ها</a></li>
-    <li><a href="computer_fundamentals.html">مبانی کامپیوتر و برنامه‌نویسی</a></li>
-    <li><a href="databases.html">پایگاه داده‌ها</a></li>
-    <li><a href="advanced_programming.html">برنامه‌نویسی پیشرفته</a></li>
-</ul>
+<table>
+    <tr>
+        <th>دروس تحصیلات تکمیلی</th>
+        <th>دروس مقطع کارشناسی</th>
+    </tr>
+    <tr>
+        <td>
+            <a href="data_science_algorithms.html">الگوریتم‌های علم داده</a><br>
+            <a href="advanced_ai.html">هوش مصنوعی پیشرفته</a><br>
+        </td>
+        <td>
+            <a href="computer_fundamentals.html">مبانی کامپیوتر و برنامه‌نویسی</a><br>
+            <a href="advanced_programming.html">برنامه‌نویسی پیشرفته</a><br>
+            <a href="data_structures.html">ساختمان داده‌ها و الگوریتم‌ها</a><br>
+            <a href="ai.html">هوش مصنوعی</a><br>
+            <a href="databases.html">پایگاه داده‌ها</a><br>
+        </td>
+    </tr>
+</table>
 
 </body>
 </html>
